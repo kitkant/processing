@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Processing</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__contact">
+            <div class="header__container container">
+                <div class="logo">
+                    <img src="src/header/logo.svg" alt="logo">
+                </div>
+                <div class="contact">
+                    <div class="contact__phone"><span class="phone_number">8 (495) 127-82-80</span></div>
+                    <button class="contact__btn btn">Напишите нам</button>
+                    <button class="contact__btn btn"><span class="logo-contact">Личный кабинет</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="container">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Доставка топлива</a>
+                        </li>
+                        <li class="menu__item item-arrow" >
+                            <a href="" class="menu__link">Топливные карты</a>
+                            <span class="arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li>
+                                    <a href="" class="sub-menu__link">E-100</a>
+                                </li>
+                                <li>
+                                    <a href="" class="sub-menu__link">Лукойл</a>
+                                </li>
+                                <li>
+                                    <a href="" class="sub-menu__link">Татнефть</a>
+                                </li>
+                                <li>
+                                    <a href="" class="sub-menu__link">Шелл</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item item-arrow">
+                            <a href="" class="menu__link">АЗС</a>
+                            <span class="arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li>
+                                    <a href="" class="sub-menu__link">ТНК-BP</a>
+                                </li>
+                                <li>
+                                    <a href="" class="sub-menu__link">Shell</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Цены на топливо</a>
+                        </li>
+                        <li class="menu__item item-arrow">
+                            <a href="" class="menu__link">О компании</a>
+                            <span class="arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li>
+                                    <a href="" class="sub-menu__link">История</a>
+                                </li>
+                                <li>
+                                    <a href="" class="sub-menu__link">Партнеры</a>
+                                </li>
+                                <li>
+                                    <a href="" class="sub-menu__link">Новости</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="delivery container">
+            <h1 class="delivery__title">Доставка топлива</h1>
+            <div class="order">
+                <h2 class="order__title">Быстрый <span class="blue">заказ топлива</span></h2>
+                <form class="order__form" id="order">
+                    <div class="order__wrapper">
+                        <div class="wrapper-card">
+                            <p class="form-text">Ваше имя</p>
+                            <input class="form-input" type="text">
+                        </div>
+                        <div class="wrapper-card">
+                            <p class="form-text">Номер телефона</p>
+                            <input class="form-input" type="tel">   
+                        </div>
+                        <button class="order-btn btn">Заказать топливо</button>
+                    </div> 
+                    <div class="form-cl">
+                        <input class="form-checkbox" type="checkbox" id="check" name="check">
+                        <label class="form-label" for="check">Я согласен с условиями обработки данных</label>        
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="cost container">
+            <h2 class="cost__title">Стоимость топлива</h2>
+            <table class="cost__table">
+                <thead class="table-head">
+                    <tr>
+                        <th class="sort-table_head">Сорт топлива</th>
+                        <th class="environmental-table_head"> Экологический класс</th>
+                        <th class="producer-table_head">Производитель</th>
+                        <th class="cash_head">Наличный расчет</th>
+                        <th class="cashless_head">Безналичный расчет</th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    <tr>
+                        <td class="empty"></td>
+                        <td class="empty"></td>
+                        <td class="empty"></td>
+                        <td class="empty"></td>
+                        <td class="empty"></td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="sort-table dt" rowspan="5"><span class="dt-text">ДТ</span></td>
+                        <td class="environmental-table_3 environmental" rowspan="3"> <span class="environmental-text">ЕВРО-5</span></td>
+                        <td class="producer-table"><span class="producer-text">Газпромнефть</span></td>
+                        <td class="cash"><span class="price-table">45.43 р.</span></td>
+                        <td class="cashless"><span class="price-table">44.43 р.</span></td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="producer-table"><span class="producer-text">Лукойл</span></td>
+                        <td class="cash"><span class="price-table">45.16 р.</span></td>
+                        <td class="cashless"><span class="price-table">43.98 р.</span></td>
+                    </tr>
+                    <tr class="tr">
+                       
+                        <td class="producer-table"><span class="producer-text">Роснефть</span></td>
+                        <td class="cash"><span class="price-table">42.34 р.</span></td>
+                        <td class="cashless"><span class="price-table">41.64 р.</span></td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="environmental-table_2 environmental" rowspan="2"><span class="environmental-text">ЕВРО-4</span></td>
+                        <td class="producer-table"><span class="producer-text">Газпромнефть</span></td>
+                        <td class="cash"><span class="price-table">-</span></td>
+                        <td class="cashless"><span class="price-table">-</span></td>
+                    </tr>
+                    <tr class="tr">
+                    
+                        <td class="producer-table"><span class="producer-text">Лукойл</span></td>
+                        <td class="cash"><span class="price-table">41.16 р.</span></td>
+                        <td class="cashless"><span class="price-table">40.67 р.</span></td>
+                    </tr>
+                    <tr>
+                        <td class="empty"></td>
+                        <td class="empty"></td>
+                        <td class="empty"></td>
+                        <td class="empty"></td>
+                        <td class="empty"></td>
+                    </tr>
+                </tbody>
+                <tbody class="table-body">
+                    <tr class="tr">
+                        <td class="sort-table ae" rowspan="8"><span class="ae-text">АИ-95</span></td>
+                        <td class="environmental-table_3 environmental" rowspan="3"><span class="environmental-text">ЕВРО-5</span></td>
+                        <td class="producer-table"><span class="producer-text">Газпромнефть</span></td>
+                        <td class="cash"><span class="price-table">45.43 р.</span></td>
+                        <td class="cashless"><span class="price-table">44.43 р.</span></td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="producer-table"><span class="producer-text">Роснефть</span></td>
+                        <td class="cash"><span class="price-table">42.34 р.</span></td>
+                        <td class="cashless"><span class="price-table">41.64 р.</span></td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="producer-table"><span class="producer-text">Лукойл</span></td>
+                        <td class="cash"><span class="price-table">45.16 р.</span></td>
+                        <td class="cashless"><span class="price-table">43.98 р.</span></td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="environmental-table_2 environmental" rowspan="2"><span class="environmental-text">ЕВРО-4</span></td>
+                        <td class="producer-table"><span class="producer-text">Лукойл</span></td>
+                        <td class="cash"><span class="price-table">41.16 р.</span></td>
+                        <td class="cashless"><span class="price-table">40.67 р.</span>.</td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="producer-table"><span class="producer-text">Газпромнефть</span></td>
+                        <td class="cash"><span class="price-table">-</span></td>
+                        <td class="cashless"><span class="price-table">-</span></td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="environmental-table_3 environmental" rowspan="3"><span class="environmental-text">ЕВРО-3</span></td>
+                        <td class="producer-table"><span class="producer-text">Роснефть</span></td>
+                        <td class="cash"><span class="price-table">42.34 р.</span></td>
+                        <td class="cashless"><span class="price-table">41.64 р.</span></td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="producer-table"><span class="producer-text">Газпромнефть</span></td>
+                        <td class="cash"><span class="price-table">-</span></td>
+                        <td class="cashless"><span class="price-table">-</span></td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="producer-table"><span class="producer-text">Лукойл</span></td>
+                        <td class="cash"><span class="price-table">45.16 р.</span></td>
+                        <td class="cashless"><span class="price"></span>43.98 р.</td>
+                    </tr>
+                </tbody>
+              </table>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class=" footer-conteiner container">
+            <p class="footer-text">All Rights Reserved © Processing Portal</p>
+            <ul class="footer-list">
+                <li class="social"><a  href="#" target="_blank"><img src="src/footer/inst.svg" alt="insta"></a></li>
+                <li class="social"><a  href="#" target="_blank"><img src="src/footer/youtube.svg" alt="youtube"></a></li>
+                <li class="social"><a  href="#" target="_blank"><img src="src/footer/twitter.svg" alt="twitter"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script/app.js"></script>
+</body>
+</html>
